@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+    withani-web:
+        build: withani-web/
+        container_name: withani-web
+        command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+        volumes:
+            - ./data/logs/nginx:/var/log/nginx
+            - ./www:/var/www
+
+networks:
+    default:
+        external:
+            name: internal-network
