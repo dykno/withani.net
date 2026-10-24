@@ -11,7 +11,7 @@
 	}
 @font-face {
 	font-family: 'Poppins';
-	src: url(../fonts/Poppins-Regular.ttf);
+	src: url('../fonts/Poppins-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -74,7 +74,7 @@
 }
 
 #intro {
-	background-image: url(../images/main-bg.jpg);
+	background-image: url('../images/main-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -82,7 +82,7 @@
 }
 
 #projects {
-	background-image: url(../images/second-bg.jpg);
+	background-image: url('../images/second-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
